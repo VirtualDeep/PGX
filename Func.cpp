@@ -118,7 +118,7 @@ void GenPass(unsigned long by, unsigned long to, std::ofstream* file, bool useHi
 	writen_b = 0;
 	m_file = file;
 
-	// Здесь создаётся char* List, cодержащий символы; size содержит размер
+	// Г‡Г¤ГҐГ±Гј Г±Г®Г§Г¤Г ВёГІГ±Гї char* List, cГ®Г¤ГҐГ°Г¦Г Г№ГЁГ© Г±ГЁГ¬ГўГ®Г«Г»; size Г±Г®Г¤ГҐГ°Г¦ГЁГІ Г°Г Г§Г¬ГҐГ°
 	unsigned long size(0);
 
 	if (useHigh == true)
@@ -195,7 +195,7 @@ void GenPass(unsigned long by, unsigned long to, std::ofstream* file, bool useHi
 	}
 
 	PauseInterface(1);
-	
+	std::remove("out.txt");
 
 	delete[] string;
 	delete[] List;
